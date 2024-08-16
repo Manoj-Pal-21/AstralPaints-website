@@ -14,15 +14,15 @@ const Navbar = () => {
 
         {/* Nav Links */}
         <div className={`lg:flex lg:items-center ${isOpen ? 'block' : 'hidden'}`}>
-          <Link to="/about" className="block py-2 px-4">About</Link>
-          <Link to="/category" className="block py-2 px-4">Category</Link>
-          <Link to="/services" className="block py-2 px-4">Services</Link>
-          <Link to="/colours" className="block py-2 px-4">Colours</Link>
-          <Link to="/downloads" className="block py-2 px-4">Downloads</Link>
-          <Link to="/become-a-dealer" className="block py-2 px-4">Become a Dealer</Link>
-          <Link to="/blogs" className="block py-2 px-4">Blogs</Link>
-          <Link to="/contact" className="block py-2 px-4">Contact</Link>
-          <Link to="/enquire" className="hidden lg:block bg-white text-[#0060AF] py-2 px-4 rounded-[20px] hover:bg-[#0060AF] hover:text-white hover:outline hover:outline-white hover:outline-2 ml-8 transition-all">Enquire Now</Link>
+          <Link to="/" className="block py-2 px-4">About</Link>
+          <Link to="/" className="block py-2 px-4">Category</Link>
+          <Link to="/" className="block py-2 px-4">Services</Link>
+          <Link to="/" className="block py-2 px-4">Colours</Link>
+          <Link to="/" className="block py-2 px-4">Downloads</Link>
+          <Link to="/" className="block py-2 px-4">Become a Dealer</Link>
+          <Link to="/" className="block py-2 px-4">Blogs</Link>
+          <Link to="/" className="block py-2 px-4">Contact</Link>
+          <Link to="/" className="hidden lg:block bg-white text-[#0060AF] py-2 px-4 rounded-[20px] hover:bg-[#0060AF] hover:text-white hover:outline hover:outline-white hover:outline-2 ml-8 transition-all">Enquire Now</Link>
         </div>
 
 

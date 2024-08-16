@@ -50,7 +50,7 @@ const Footer = () => {
                   className="px-4 py-2 border text-black w-full md:w-64 rounded-[25px] focus:outline-none mb-4 md:mb-0"
                 />
                 <Link
-                  to="/enquire"
+                  to="/"
                   className="absolute right-[-40px] bg-[#0060AF] text-[#EEDCB2] py-2.5 px-4 rounded-[25px]"
                 >
                   Enquire Now

@@ -19,9 +19,9 @@ const Carousel = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       handleNext();
-    }, 3000); 
+    }, 3000);
 
-    return () => clearInterval(intervalId); 
+    return () => clearInterval(intervalId);
   }, []);
 
   return (
@@ -54,7 +54,7 @@ const Carousel = () => {
         </button>
       </div>
       {/* Rambo Image */}
-      <div className="absolute bottom-[-100px] left-0 w-full">
+      <div className="hidden md:block absolute bottom-[-100px] left-0 w-full">
         <img
           src="images/rambo.png"
           alt="Rambo"
