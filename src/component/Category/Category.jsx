@@ -2,24 +2,21 @@ import React from 'react';
 
 const Category = () => {
     return (
-        <div className="container mx-auto px-4">
-            <div className="lg:w-1/2 flex flex-col items-start p-3 lg:p-6">
-                <h6 className="text-sx font-semibold text-gray-600 mb-2">
-                    Category
-                </h6>
+        <div className="p-6 lg:p-12">
+            <h6 className="text-sx font-semibold text-gray-600 mb-2">
+                Category
+            </h6>
 
-                <div className="flex flex-col lg:flex-row items-center">
-                    <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4 lg:mb-0 lg:mr-6">
-                        Wide range of Colours
-                    </h2>
-                    <img
-                        className="object-cover w-full lg:w-auto"
-                        src="images/category-shade.png"
-                        alt="Dreams"
-                    />
-                </div>
+            <div className="flex items-center mb-4">
+                <h2 className="text-3xl font-bold text-gray-900 mr-6">
+                    Wide range of Colours                </h2>
+                <img
+                    className="object-cover"
+                    src="images/category-shade.png"
+                    alt="Dreams"
+                />
             </div>
-            <div className="flex flex-col lg:flex-row p-6">
+            <div className="flex flex-col lg:flex-row">
                 <div className="flex flex-col lg:flex-row lg:gap-4">
                     {/* Left Side */}
                     <div className="w-full lg:w-1/2 relative mb-4 lg:mb-0">
@@ -88,8 +85,9 @@ const Category = () => {
                     </div>
                 </div>
             </div>
-
         </div>
+
+
     );
 };
 
