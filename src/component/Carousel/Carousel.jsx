@@ -17,42 +17,43 @@ const Carousel = () => {
   };
 
   return (
-    <>
-      <div className="relative w-full h-screen overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src={slides[currentSlide].image}
-            alt="Carousel"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 flex items-center justify-start p-8 bg-gradient-to-r from-black via-transparent to-transparent">
-            <div className="text-white max-w-lg">
-              <h1 className="text-4xl font-bold mb-4">{slides[currentSlide].title}</h1>
-              <p className="mb-6">{slides[currentSlide].description}</p>
-              <button className="bg-white text-black py-2 px-4 rounded-full">Read More</button>
-            </div>
+    <div className="relative w-full h-screen overflow-hidden">
+      {/* Carousel Container */}
+      <div className="relative w-full h-4/5 overflow-hidden z-20">
+        <img
+          src={slides[currentSlide].image}
+          alt="Carousel"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 flex items-center justify-start p-8 bg-gradient-to-r from-black via-transparent to-transparent z-30"> 
+          <div className="text-white max-w-lg">
+            <h1 className="text-4xl font-bold mb-4">{slides[currentSlide].title}</h1>
+            <p className="mb-6">{slides[currentSlide].description}</p>
+            <button className="bg-white text-black py-2 px-4 rounded-full">Read More</button>
           </div>
         </div>
         <button
           onClick={handlePrev}
-          className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white text-3xl bg-black p-2 rounded-full"
+          className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white text-3xl bg-black p-2 rounded-full z-40" 
         >
           &lt;
         </button>
         <button
           onClick={handleNext}
-          className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white text-3xl bg-black p-2 rounded-full"
+          className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white text-3xl bg-black p-2 rounded-full z-40" 
         >
           &gt;
         </button>
       </div>
-      {/* <div className="">
+      {/* Rambo Image */}
+      <div className="absolute bottom-[-100px] left-0 w-full z-30"> 
         <img
           src="images/rambo.png"
-          alt="rambo"
+          alt="Rambo"
+          className="w-full h-auto"
         />
-      </div> */}
-    </>
+      </div>
+    </div>
   );
 };
 
