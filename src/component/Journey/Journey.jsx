@@ -2,7 +2,7 @@ import React from 'react'
 
 const Journey = () => {
     return (
-        <div className="relative flex items-center justify-center min-h-screen bg-cover bg-center bg-[url('images/Journey-bg.png')] h-[80vh]">
+        <div className="relative flex items-center justify-center h-[358px] bg-cover bg-center bg-[url('images/Journey-bg.png')]">
             <div className="absolute inset-0 bg-black opacity-50"></div>
 
             {/* Content */}
