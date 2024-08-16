@@ -37,7 +37,7 @@ const Colours = () => {
                 {colors.map((color, index) => (
                     <div
                         key={index}
-                        className="relative flex flex-col items-center p-4 transition-all duration-300 ease-in-out rounded-lg border-2 border-white hover:border-transparent hover:outline hover:outline-2 hover:outline-blue-500 w-full h-full"
+                        className="relative flex flex-col items-center p-4 transition-all duration-300 ease-in-out border-2 border-white hover:border-transparent hover:outline hover:outline-2 hover:outline-black-500 w-full h-full"
                     >
                         <div
                             className="w-full h-32 sm:h-40 lg:h-48"
