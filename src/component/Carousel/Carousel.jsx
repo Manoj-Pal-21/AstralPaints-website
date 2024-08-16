@@ -40,18 +40,6 @@ const Carousel = () => {
             <button className="bg-white text-black py-2 px-4 rounded-full">Read More</button>
           </div>
         </div>
-        <button
-          onClick={handlePrev}
-          className="absolute top-1/2 left-4 transform -translate-y-1/2 text-white text-3xl bg-black p-2 rounded-full z-40"
-        >
-          &lt;
-        </button>
-        <button
-          onClick={handleNext}
-          className="absolute top-1/2 right-4 transform -translate-y-1/2 text-white text-3xl bg-black p-2 rounded-full z-40"
-        >
-          &gt;
-        </button>
       </div>
       {/* Rambo Image */}
       <div className="hidden md:block absolute bottom-[-100px] left-0 w-full">
