@@ -15,7 +15,6 @@ const Home = () => {
         className="absolute left-0 top-0 h-full bg-gradient-to-b from-red-500 via-green-500 to-blue-500"
         style={{ width: '8px' }}
       ></div>
-
       <Carousel />
       <About />
       <Category />
