@@ -9,16 +9,15 @@ const colors = [
     { name: 'Golden Yellow', code: '#ECA628' }
 ];
 
-
 const Colours = () => {
     return (
         <div className="p-6 lg:p-12">
-            <h6 className="text-sx font-semibold text-gray-600 mb-2">
+            <h6 className="text-xs font-semibold text-gray-600 mb-2">
                 Colors
             </h6>
 
-            <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center">
+            <div className="flex flex-col lg:flex-row items-center justify-between mb-4">
+                <div className="flex items-center mb-4 lg:mb-0">
                     <h2 className="text-3xl font-bold text-gray-900 mr-6">
                         Popular Colours
                     </h2>
@@ -54,12 +53,6 @@ const Colours = () => {
                     </div>
                 ))}
             </div>
-
-
-
-
-
-
         </div>
     );
 };
