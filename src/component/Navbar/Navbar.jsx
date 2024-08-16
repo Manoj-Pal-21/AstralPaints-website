@@ -6,27 +6,12 @@ const Navbar = () => {
 
   return (
     <nav className="bg-[#0060AF] text-white py-5">
-      <div className="container mx-auto max-w-[1320px] px-4 flex items-center justify-between">
+      <div className="container mx-auto max-w-[1320px] px-4 flex flex-wrap items-center justify-between">
         {/* Logo */}
         <div className="text-lg font-bold flex-shrink-0 mr-16">
-          <img src="images/logo.png" alt="Logo" className="h-8" />
+          <img src="images/logo.png" alt="Logo" className="h-8 md:h-10" />
         </div>
 
-        {/* Nav Links */}
-        <div className={`lg:flex lg:items-center ${isOpen ? 'block' : 'hidden'}`}>
-          <Link to="/" className="block py-2 px-4">About</Link>
-          <Link to="/" className="block py-2 px-4">Category</Link>
-          <Link to="/" className="block py-2 px-4">Services</Link>
-          <Link to="/" className="block py-2 px-4">Colours</Link>
-          <Link to="/" className="block py-2 px-4">Downloads</Link>
-          <Link to="/" className="block py-2 px-4">Become a Dealer</Link>
-          <Link to="/" className="block py-2 px-4">Blogs</Link>
-          <Link to="/" className="block py-2 px-4">Contact</Link>
-          <Link to="/" className="hidden lg:block bg-white text-[#0060AF] py-2 px-4 rounded-[20px] hover:bg-[#0060AF] hover:text-white hover:outline hover:outline-white hover:outline-2 ml-8 transition-all">Enquire Now</Link>
-        </div>
-
-
-        {/* Hamburger Icon for Mobile */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="lg:hidden block text-white focus:outline-none"
@@ -35,6 +20,20 @@ const Navbar = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
+
+        {/* Nav Links */}
+        <div className={`lg:flex lg:items-center ${isOpen ? 'block' : 'hidden'} w-full lg:w-auto mt-4 lg:mt-0`}>
+          <Link to="/" className="block py-2 px-4 text-center">About</Link>
+          <Link to="/" className="block py-2 px-4 text-center">Category</Link>
+          <Link to="/" className="block py-2 px-4 text-center">Services</Link>
+          <Link to="/" className="block py-2 px-4 text-center">Colours</Link>
+          <Link to="/" className="block py-2 px-4 text-center">Downloads</Link>
+          <Link to="/" className="block py-2 px-4 text-center">Become a Dealer</Link>
+          <Link to="/" className="block py-2 px-4 text-center">Blogs</Link>
+          <Link to="/" className="block py-2 px-4 text-center">Contact</Link>
+          <Link to="/" className="block lg:hidden bg-white text-[#0060AF] py-2 px-4 rounded-[20px] hover:bg-[#0060AF] hover:text-white hover:outline hover:outline-white hover:outline-2 mt-4 transition-all">Enquire Now</Link>
+          <Link to="/" className="hidden lg:block bg-white text-[#0060AF] py-2 px-4 rounded-[20px] hover:bg-[#0060AF] hover:text-white hover:outline hover:outline-white hover:outline-2 ml-8 transition-all">Enquire Now</Link>
+        </div>
       </div>
     </nav>
   );
