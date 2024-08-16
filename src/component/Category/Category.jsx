@@ -9,7 +9,8 @@ const Category = () => {
 
             <div className="flex items-center mb-4">
                 <h2 className="text-3xl font-bold text-gray-900 mr-6">
-                    Wide range of Colours                </h2>
+                    Wide range of Colours
+                </h2>
                 <img
                     className="object-cover"
                     src="images/category-shade.png"
