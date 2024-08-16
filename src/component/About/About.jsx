@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className="flex flex-col items-center py-12 px-4 bg-gray-100">
+        <div className="flex flex-col items-center py-12 px-4">
             <div className="container mx-auto flex flex-col lg:flex-row-reverse items-center">
 
                 {/* Right side image */}
