@@ -9,7 +9,7 @@ import Colours from '../../component/Colours/Colours';
 
 const Home = () => {
   return (
-    <div className="relative">
+    <div className="relative pt-20">
       {/* Vertical Rainbow Gradient Line */}
       <div
         className="absolute left-0 top-0 h-full bg-gradient-to-b from-red-500 via-green-500 to-blue-500"
