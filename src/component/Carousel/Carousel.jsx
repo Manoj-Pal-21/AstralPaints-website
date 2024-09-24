@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useContext } from 'react';
+import { DataContext } from '../../context/DataContext'
 
 const slides = [
   { id: 1, image: 'images/sofa.png', title: 'Interior Emulsions', description: 'Excellent fungal resistance | Smooth finish' },
@@ -7,6 +8,7 @@ const slides = [
 
 const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const data = useContext(DataContext);
 
   const handleNext = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);

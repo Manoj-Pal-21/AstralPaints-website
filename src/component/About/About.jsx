@@ -1,4 +1,5 @@
 import React from 'react';
+import { AstralPaints } from '../../common/AstralPaints';
 
 const About = () => {
     return (
@@ -16,20 +17,12 @@ const About = () => {
 
                 {/* Left side content */}
                 <div className="lg:w-1/2 flex flex-col items-start p-6 lg:p-12">
-                    <h6 className="text-sx font-semibold text-gray-600 mb-2">
-                        About Astral Paints
-                    </h6>
-
-                    <div className="flex items-center mb-4">
-                        <h2 className="text-3xl font-bold text-gray-900 mr-6">
-                            Bringing your dreams to life
-                        </h2>
-                        <img
-                            className="object-cover"
-                            src="images/about-shade.png"
-                            alt="Dreams"
-                        />
-                    </div>
+                    <AstralPaints
+                        title="About Astral Paints"
+                        subtitle="Bringing your dreams to life"
+                        imageSrc="images/about-shade.png"
+                        altText="Dreams"
+                    />
 
                     <p className="text-gray-700 mb-6">
                         Lorem ipsum dolor sit amet consectetur. Placerat elementum lobortis phasellus porttitor amet odio tempor. Ac molestie fames id urna dui posuere ultricies aliquam. Gravida et ac ac donec. Lacus est diam at in pharetra velit luctus id pellentesque.

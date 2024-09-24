@@ -1,23 +1,16 @@
 import React from 'react';
-import ServiceCard from './ServiceCard'; // Adjust the import path as necessary
+import ServiceCard from './ServiceCard';
+import { AstralPaints } from '../../common/AstralPaints';
 
 const Services = () => {
     return (
         <div className="p-6 lg:p-12">
-            <h6 className="text-sx font-semibold text-gray-600 mb-2">
-                Services
-            </h6>
-
-            <div className="flex items-center mb-4">
-                <h2 className="text-3xl font-bold text-gray-900 mr-6">
-                    Make Your Life Comfortable
-                </h2>
-                <img
-                    className="object-cover"
-                    src="images/services-shade.png"
-                    alt="Dreams"
-                />
-            </div>
+            <AstralPaints
+                title="Services"
+                subtitle=" Make Your Life Comfortable"
+                imageSrc="images/services-shade.png"
+                altText="Dreams"
+            />
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <ServiceCard

@@ -1,22 +1,15 @@
 import React from 'react';
+import { AstralPaints } from '../../common/AstralPaints';
 
 const Category = () => {
     return (
         <div className="p-6 lg:p-12">
-            <h6 className="text-sx font-semibold text-gray-600 mb-2">
-                Category
-            </h6>
-
-            <div className="flex items-center mb-4">
-                <h2 className="text-3xl font-bold text-gray-900 mr-6">
-                    Wide range of Colours
-                </h2>
-                <img
-                    className="object-cover"
-                    src="images/category-shade.png"
-                    alt="Dreams"
-                />
-            </div>
+            <AstralPaints
+                title="Category"
+                subtitle="Wide range of Colours"
+                imageSrc="images/category-shade.png"
+                altText="Dreams"
+            />
             <div className="flex flex-col lg:flex-row">
                 <div className="flex flex-col lg:flex-row lg:gap-4">
                     {/* Left Side */}

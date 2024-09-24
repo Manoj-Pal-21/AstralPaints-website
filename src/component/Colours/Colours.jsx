@@ -43,12 +43,15 @@ const Colours = () => {
                             className="w-full h-32 sm:h-40 lg:h-48"
                             style={{ backgroundColor: color.code }}
                         />
+                        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                            <div className="flex flex-col items-center">
+                                <p className="text-lg font-semibold">Asient Paints</p>
+                                <p className="text-lg font-semibold">{color.name}</p>
+                            </div>
+                        </div>
                         <div className="flex-1 flex flex-col justify-end mt-2 text-center">
                             <p className="text-sm">Color Code</p>
                             <p className="text-xs text-gray-500">{color.code}</p>
-                        </div>
-                        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
-                            <p className="text-lg font-semibold">{color.name}</p>
                         </div>
                     </div>
                 ))}

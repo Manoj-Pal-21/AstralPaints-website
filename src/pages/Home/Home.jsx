@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Carousel from '../../component/Carousel/Carousel';
 import About from '../../component/About/About';
 import Category from '../../component/Category/Category';
@@ -8,6 +8,7 @@ import Blog from '../../component/Blog/Blog';
 import Colours from '../../component/Colours/Colours';
 
 const Home = () => {
+ 
   return (
     <div className="relative pt-20">
       {/* Vertical Rainbow Gradient Line */}
