@@ -37,20 +37,20 @@ const Colours = () => {
                 {colors.map((color, index) => (
                     <div
                         key={index}
-                        className="relative flex flex-col items-center p-4 transition-all duration-300 ease-in-out border-2 border-white hover:border-transparent hover:outline hover:outline-2 hover:outline-black-500 w-full h-full"
+                        className="relative flex flex-col items-center p-4 transition-transform duration-300 ease-in-out border-2 border-white hover:scale-105 shadow-lg hover:shadow-xl rounded-lg overflow-hidden"
                     >
                         <div
                             className="w-full h-32 sm:h-40 lg:h-48"
                             style={{ backgroundColor: color.code }}
                         />
                         <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
-                            <div className="flex flex-col items-center">
+                            <div className="flex flex-col items-center text-center">
                                 <p className="text-lg font-semibold">Asient Paints</p>
                                 <p className="text-lg font-semibold">{color.name}</p>
                             </div>
                         </div>
                         <div className="flex-1 flex flex-col justify-end mt-2 text-center">
-                            <p className="text-sm">Color Code</p>
+                            <p className="text-sm font-medium text-gray-700">Color Code</p>
                             <p className="text-xs text-gray-500">{color.code}</p>
                         </div>
                     </div>
