@@ -5,7 +5,6 @@ const Journey = () => {
         <div className="relative flex items-center justify-center h-[358px] bg-cover bg-center bg-[url('/images/Journey-bg.png')]">
             <div className="absolute inset-0 bg-black opacity-50"></div>
 
-            {/* Content */}
             <div className="relative z-10 text-center">
                 <p className="text-sm font-semibold text-white">Join the Success Journey</p>
                 <h4 className="text-4xl font-bold mb-4 text-white">Become a Dealer</h4>

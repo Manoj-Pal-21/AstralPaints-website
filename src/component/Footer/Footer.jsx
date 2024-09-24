@@ -17,7 +17,6 @@ const Footer = () => {
         className="relative text-white py-8 bg-cover bg-center"
         style={{ backgroundImage: "url('/images/bg-footer.png')" }}
       >
-        {/* for semi-transparent background overlay */}
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
         <div className="relative z-10 container mx-auto px-4">
           {/* Footer top section */}
